@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GenaroMartinez/twitterbiz.bot/issues"
   },
-  "homepage": "https://github.com/GenaroMartinez/twitterbiz.bot#readme"
+  "homepage": "https://github.com/GenaroMartinez/twitterbiz.bot#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
 }
