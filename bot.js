@@ -1,5 +1,8 @@
 const Twit = require('twit');
-const config = {BOT_CONSUMER, BOT_CONSUMERSECRET, BOT_ACCESS, BOT_ACCESS_SECRET } = process.env;
+const config = { consumer_key: BOT_CONSUMER,
+consumer_secret: BOT_CONSUMERSECRET,
+access_token: BOT_ACCESS,
+access_token_secret:  BOT_ACCESS_SECRET, } = process.env;
 
 const T = new Twit(config);
 
