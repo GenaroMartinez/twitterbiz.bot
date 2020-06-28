@@ -1,6 +1,7 @@
-require('dotenv').config()
+
 const Twit = require('twit');
 
+require('dotenv').config()
 
 
 
@@ -12,13 +13,11 @@ const T = new Twit({
     timeout_ms: 60 * 1000,  // optional HTTP request timeout to apply to all requests.
     strictSSL: true,     // optional - requires SSL certificates to be valid.
 });
-// running hello world
 
-T.post('statuses/update', { status: 'hello world!' }, function (err, data, response) {
-    console.log(data)
+T.post('statuses/update', { status: 'hello world!' }, function (
+    err,
+    data,
+    response
+) {
+    console.log(data);
 });
-
-
-
-
-
