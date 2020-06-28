@@ -1,9 +1,13 @@
 const Twit = require('twit');
-const config = { consumer_key: BOT_CONSUMER,
-consumer_secret: BOT_CONSUMERSECRET,
-access_token: BOT_ACCESS,
-access_token_secret:  BOT_ACCESS_SECRET, } = process.env;
-
+const config = ({
+         consumer_key: BOT_CONSUMER,
+         consumer_secret: BOT_CONSUMERSECRET,
+         access_token: BOT_ACCESS,
+         access_token_secret: BOT_ACCESS_SECRET,
+         timeout_ms: 60 * 1000,  // optional HTTP request timeout to apply to all requests.
+         strictSSL: true,     // optional - requires SSL certificates to be valid.
+     })process.env;
+console.log (config);
 const T = new Twit(config);
 
 
